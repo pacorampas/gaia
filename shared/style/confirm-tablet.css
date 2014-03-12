@@ -4,25 +4,7 @@
  
  /* Main dialog setup */
 form[role="dialog"][data-type="confirm"] {
-  display: flex;
-  
-  align-items: center;
-
-  margin: 0 auto;
-  widows: 100%;
-  max-width: 500px;
-  height: clac( 100% - 7rem);
-  max-height: 500px;
-}
-
-form[role="dialog"][data-type="confirm"]:before {
-  content: "";
-  display: flex;
-  align-items: center;
- 
-  width: 0.1rem;
-  height: 100%;
-  margin-left: -0.1rem;
+  display: absolute;
 }
 
 form[role="dialog"][data-type="confirm"] > section {
