@@ -1,0 +1,61 @@
+/* ----------------------------------
+ * Value selector tablet (Single & Multiple)
+ * ---------------------------------- */
+
+
+@media (min-width: 640px){
+ 
+  form[role="dialog"][data-type="value-selector"] {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background:
+      url(value_selector/images/ui/pattern.png) repeat left top,
+      url(value_selector/images/ui/gradient.png) no-repeat center / 56rem 36.5rem;
+    background-color: rgba(0,0,0,0.65);
+
+  }
+
+  form[role="dialog"][data-type="value-selector"]:before {
+    content: "";
+    display: block;
+    vertical-align: middle;
+    height: auto;
+  }
+
+
+  form[role="dialog"][data-type="value-selector"] > section {
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(36.5rem - 6.8rem);
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  form[role="dialog"][data-type="value-selector"] > section h1{
+    width: calc(100% + 12rem);
+    margin-left: -6rem;
+    padding-left: 6rem;
+  }
+
+
+  form[role="dialog"][data-type="value-selector"] menu {
+    position: static;
+    width: 56rem;
+    box-sizing: padding-box;
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form[role="dialog"][data-type="value-selector"] menu button {
+    width: calc((60% - 1rem) / 2);
+  }
+}

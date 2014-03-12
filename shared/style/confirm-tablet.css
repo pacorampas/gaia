@@ -3,20 +3,52 @@
  * ---------------------------------- */
  
  /* Main dialog setup */
-form[role="dialog"][data-type="confirm"] {
-  display: absolute;
-}
+@media (min-width: 640px){
 
-form[role="dialog"][data-type="confirm"] > section {
-  font-weight: lighter;
-  font-size: 2.2rem;
-  color: #FAFAFA;
-  padding: 0 1.5rem;
-  -moz-box-sizing: padding-box;
-  width: 100%;
-  display: inline-block;
-  overflow-y: scroll;
-  max-height: 100%;
-  vertical-align: middle;
-  white-space: normal;
+  form[role="dialog"][data-type="confirm"] {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background:
+      url(confirm/images/ui/pattern.png) repeat left top,
+      url(confirm/images/ui/gradient.png) no-repeat center / 56rem 36.5rem;
+    background-color: rgba(0,0,0,0.65);
+
+  }
+
+  form[role="dialog"][data-type="confirm"]:before {
+    content: "";
+    display: block;
+    vertical-align: middle;
+    height: auto;
+  }
+
+
+  form[role="dialog"][data-type="confirm"] > section {
+    width: 56rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(36.5rem - 6.8rem);
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  form[role="dialog"][data-type="confirm"] menu {
+    position: static;
+    width: 56rem;
+    box-sizing: padding-box;
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form[role="dialog"][data-type="confirm"] menu button {
+    width: calc((60% - 1rem) / 2);
+  }
 }
