@@ -33,14 +33,15 @@
     flex-direction: column;
     justify-content: center;
     height: calc(36.5rem - 6.8rem);
+  }
+  
+  form[role="dialog"][data-type="value-selector"] > section h1{
     padding-left: 6rem;
-    padding-right: 6rem;
   }
 
-  form[role="dialog"][data-type="value-selector"] > section h1{
-    width: calc(100% + 12rem);
-    margin-left: -6rem;
+  form[role="dialog"][data-type="value-selector"] [role="listbox"]{
     padding-left: 6rem;
+    padding-right: 6rem;
   }
 
 
