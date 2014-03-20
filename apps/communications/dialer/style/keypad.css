@@ -398,19 +398,19 @@ article:not(:target) #keypad-delete {
 #suggestion-count {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 0.2rem;
   right: 0;
   width: 5.3rem;
   text-align: center;
-  line-height: 4rem;
-  margin: 0.2rem 0.2rem 0.4rem 0.2rem;
+  line-height: 3.8rem;
+  margin-bottom: 0.2rem;
   color: white;
   font-weight: 400;
   border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 #suggestion-count.more {
-  background: url(images/icon_arrow_white.png) no-repeat right 0.3rem bottom / 1rem;
+  background: url('images/icon_arrow_white.png') no-repeat scroll right 0.5rem bottom 0.2rem / 1rem auto transparent;
 }
 
 #suggestion-bar > .suggestion-item {
