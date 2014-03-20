@@ -21,12 +21,19 @@ button::-moz-focus-inner {
   height: 28%;
   background: #3cc;
   text-align: center;
+<<<<<<< HEAD
   display: table;
   table-layout: fixed;
   border-spacing: 1.6rem;
   font-weight: 300;
   overflow: hidden;
   display: flex;
+=======
+  display: flex;
+  border-spacing: 1.6rem;
+  font-weight: 300;
+  overflow: hidden;
+>>>>>>> Bug 951604 - [Dialer] Main dialer screen (keypad) visual refresh 1.5
 }
 
 #phone-number-view-container.keypad-visible {
