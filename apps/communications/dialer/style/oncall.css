@@ -55,6 +55,7 @@
   .grid {
     display:table;
     table-layout:fixed;
+    border:0;
   }
 
   .grid.hide {
@@ -211,15 +212,13 @@
   .co-advanced-option {
     height: 8rem;
     width: 100%;
-    background: rgba(24, 24, 24, 0.85);
-    border: solid 0.1rem black;
-    border-left-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.85);
     -moz-box-sizing: border-box;
     border-radius: 0;
   }
 
   .co-advanced-option:not([disabled]):active {
-    background: #00aacc;
+    background: #33cccc;
   }
 
 
@@ -249,30 +248,29 @@
   button[disabled] .icon {
     opacity: 0.6;
   }
-
+  /*when it's active*/
   .icon-mute {
-    background-image: url('images/ActionIcon_40x40_mute.png');
+    background-image: url('images/actionicon_activecall_mute.svg');
   }
 
   .icon-keypad-visibility {
-    background-image: url('images/ActionIcon_40x40_dialpad.png');
+    background-image: url('images/actionicon_activecall_dialpad.svg');
   }
 
   .icon-place-new-call {
-    background-image: url('images/ActionIcon_40x40_placenewcall.png');
+    background-image: url('images/actionicon_activecall_add_call.svg');
   }
 
   .icon-speaker {
-    background-image: url('images/ActionIcon_40x40_speaker.png') ;
+    background-image: url('images/actionicon_activecall_speaker.svg') ;
   }
 
   .icon-bt {
-    background-image: url('images/ActionIcon_40x40_audiosourcemenu.png');
+    background-image: url('images/actionicon_activecall_speaker.svg');
   }
 
   #callbar {
-    background: rgba(24, 24, 24, 0.85);
-    border: solid 0.1rem rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.85);
     border-right-color: rgba(0, 0, 0, 0.4);
     border-bottom-color: rgba(0, 0, 0, 0.4);
     border-left: 0;
@@ -310,7 +308,7 @@
     margin: 1rem .5rem 1.5rem .5rem;
 
     border: 0;
-    border-radius: .3rem;
+    border-radius: 2rem;
 
     background-size: auto 100%;
   }
@@ -318,22 +316,22 @@
   #callbar-hang-up > .callbar-inner-button {
     margin: 1rem 0 1.5rem .5rem;
     background: url('images/ActionIcon_40x40_hangup.png') center / 4rem no-repeat,
-                url('images/btn_hang_up.png') repeat-x;
+                #de0000;
   }
 
   #callbar-hang-up:active > .callbar-inner-button {
     background: url('images/ActionIcon_40x40_hangup.png') center / 4rem no-repeat,
-                #820000;
+                #de0000;
   }
 
   #callbar-answer > .callbar-inner-button {
     background: url('images/ActionIcon_40x40_pickup.png') center / 4rem no-repeat,
-                url('images/btn_pick_up.png') repeat-x;
+                #28c7bf;
   }
 
   #callbar-answer:active > .callbar-inner-button {
     background: url('images/ActionIcon_40x40_pickup.png') center / 4rem no-repeat,
-                #4B780A;
+                #28c7bf;
   }
 
   #callbar-hold > .callbar-inner-button {
@@ -444,7 +442,7 @@
   #calls.big-duration > section .numberWrapper,
   #calls.big-duration > section .additionalContactInfo,
   #calls.big-duration > section .switch-calls {
-    background: #01c5ed;
+    background: rgba(255,255,255,0.85);
     transition: background-color 0.3s linear;
   }
 
@@ -456,7 +454,7 @@
   #calls > section .numberWrapper .number {
     height: 2.5rem;
     padding: 2rem 0 0 0;
-    font-size: 2.5rem;
+    font-size: 3rem; /*2.5*/
     line-height: 1.5rem;
     color: black;
     white-space: nowrap;
@@ -493,7 +491,7 @@
     padding: 0 7rem 2rem 4rem;
     font-size: 1.6rem;
     line-height: 2rem;
-    color: white;
+    color: black;
   }
 
   #calls.big-duration > section .additionalContactInfo {
@@ -564,7 +562,7 @@
   #calls.big-duration > section.ended .numberWrapper,
   #calls.big-duration > section.ended .additionalContactInfo,
   #calls.big-duration > section.ended .switch-calls {
-    background-color: rgba(28, 24, 24, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   #calls:not(.big-duration) > section.held {
@@ -693,7 +691,7 @@
 
   #incoming-end {
     background: url('images/ActionIcon_40x40_hangup.png'),
-                url('images/btn_hang_up.png');
+                #de0000;
     background-size: 4rem, auto 100%;
     margin-left: 1.5rem;
   }

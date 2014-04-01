@@ -66,11 +66,10 @@ article:not(:target) #keypad-delete {
 #keyboard-container {
   width: 100%;
   height: 30rem;
-  background-color: white;
 }
 
 #keypad {
-  background: rgba(24,24,24,.92);
+  background: rgba(255,255,255,.85);
   height: -moz-calc(100% - 10rem);
   width: 100%;
   display: table;
@@ -91,14 +90,11 @@ article:not(:target) #keypad-delete {
 
 .keypad-key {
   display: table-cell;
-  border: solid 0.1rem rgba(255, 255, 255, 0.2);
-  border-right-color: rgba(0, 0, 0, 0.4);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
   padding: 1.3rem 0 0 1.5rem;
   -moz-box-sizing: border-box;
   height: 6rem;
   vertical-align: middle;
-  color: white;
+  color: #333333;
   font-weight: 400;
   font-size: 5rem;
   line-height: 1rem;
@@ -108,18 +104,18 @@ article:not(:target) #keypad-delete {
   margin-left: 0.3rem;
   font-weight: normal;
   font-size: 1.5rem;
-  color: #96AAB4;
+  color: #33cccc;
   font-style: normal;
 }
 
 .keypad-key:active {
-  background: #00aacc;
+  background: #33cccc;
 }
 
 .keypad-key:active em {
   color: #FFF;
 }
-
+/*changes*/
 .keypad-key:active .voicemail {
   background-image: url('images/voicemail_.png');
 }
@@ -158,7 +154,7 @@ article:not(:target) #keypad-delete {
   background-image: url('images/voicemail.png');
   background-size: 2.2rem;
 }
-
+/*changes*/
 .asterisk {
   background-image: url('images/asterisk.png');
   background-repeat: no-repeat;
@@ -169,7 +165,7 @@ article:not(:target) #keypad-delete {
   margin: auto 1.5rem;
   pointer-events: none;
 }
-
+/*changes*/
 .sharp {
   background-image: url('images/sharp.png');
   background-repeat: no-repeat;
@@ -197,7 +193,7 @@ article:not(:target) #keypad-delete {
 #keypad-callbar-add-contact,
 #keypad-callbar-cancel {
   width: 9rem;
-  background: url("images/btn_generic.png") repeat-x;
+  background: #de0000;
   background-size: auto 100%;
   border-radius: .2rem;
   margin: 0.8rem 0 0.8rem 0.8rem;
@@ -280,11 +276,8 @@ article:not(:target) #keypad-delete {
 }
 
 #keypad-hidebar {
-  background: rgba(24,24,24,.92);
-  border: solid 0.1rem rgba(255, 255, 255, 0.2);
-  border-right-color: rgba(0, 0, 0, 0.4);
-  border-bottom-color: rgba(0, 0, 0, 0.4);
-  border-left: 0;
+  background: rgba(255,255,255,.85);
+  border: 0;
   -moz-box-sizing: border-box;
 }
 
@@ -302,19 +295,19 @@ article:not(:target) #keypad-delete {
 .keypad-hidebar-button {
   height: 4rem;
   border: 0;
-  border-radius:.3rem;
+  border-radius: 2rem;
   display: block;
 }
 
 #keypad-hidebar-hang-up-action {
-  background: url("images/btn_hang_up.png") repeat-x;
   background-size: auto 100%;
   opacity: 1.0;
   margin: 1rem .5rem 1.5rem 1.5rem;
+  background: #de0000;
 }
 
 #keypad-hidebar-hang-up-action:active {
-  background: #820000;
+  background: #de0000;
 }
 
 #keypad-hidebar-hang-up-action > div {
@@ -328,14 +321,14 @@ article:not(:target) #keypad-delete {
 }
 
 #keypad-hidebar-hide-keypad-action {
-  background: url("images/btn_generic.png") repeat-x;
   background-size: auto 100%;
   opacity: 1.0;
   margin: 1rem 1.5rem 1.5rem .5rem;
+  background: #e7e7e7;
 }
 
 #keypad-hidebar-hide-keypad-action:active {
-  background: #333333;
+  background: #e7e7e7;
 }
 
 #keypad-hidebar-hide-keypad-action > div {
