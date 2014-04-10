@@ -109,7 +109,6 @@ article:not(:target) #keypad-delete {
 
 .keypad-key span {
   width: 2rem;
-  display: inline-block;
 }
 
 .keypad-key em {
@@ -167,6 +166,7 @@ article:not(:target) #keypad-delete {
   width: 4rem;
   margin-top: 2rem;
   margin-left: 0.3rem;
+  overflow: visible;
 }
 /*changes*/
 .sharp {
@@ -175,6 +175,7 @@ article:not(:target) #keypad-delete {
   line-height: 0;
   margin-top: -0.2rem;
   margin-left: 0.2rem;
+  overflow: visible;
 }
 
 #keypad-callbar {
