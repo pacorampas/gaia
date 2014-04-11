@@ -83,7 +83,6 @@ article:not(:target) #keypad-delete {
 }
 
 #keypad {
-  background: #fff;
   height: 80%;
   width: 100%;
   display: table;
@@ -179,7 +178,6 @@ article:not(:target) #keypad-delete {
 }
 
 #keypad-callbar {
-  background: #fff;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -293,7 +291,6 @@ article:not(:target) #keypad-delete {
 }
 
 #keypad-hidebar {
-  background: rgba(255,255,255,.85);
   border: 0;
   -moz-box-sizing: border-box;
 }
