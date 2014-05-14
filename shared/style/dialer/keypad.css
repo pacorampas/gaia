@@ -78,12 +78,10 @@
 
 #keyboard-container {
   height: 72%;
-  background-color: white;
-  margin: 0 1rem;
+  padding: 0 1rem;
 }
 
 #keypad {
-  background: #fff;
   width: 100%;
   height: 80%;
   display: table;
@@ -120,6 +118,7 @@
   color: #038282;
   font-style: normal;
   width: 4.5rem;
+  overflow: visible;
 }
 
 .keypad-key:active {
@@ -161,6 +160,7 @@
   width: 4rem;
   margin-top: 1rem;
   margin-left: 0.2rem;
+  overflow: visible;
 }
 
 .sharp {
@@ -169,10 +169,10 @@
   line-height: 0;
   margin-top: -0.5rem;
   margin-left: 0.2rem;
+  overflow: visible;
 }
 
 #keypad-callbar {
-  background: #fff;
   height: 20%;
   display: flex;
   flex-direction: row;
@@ -368,7 +368,7 @@
   margin-bottom: 0.2rem;
   margin-top: 0.2rem;
   font-weight: 400;
-  border-left: 1px solid rgba(255,255,255,0.2);
+  border-left: 0.1rem solid rgba(255,255,255,0.2);
 }
 
 #suggestion-count.more {
