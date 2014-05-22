@@ -227,6 +227,9 @@ ul li > label.pack-switch {
   margin: 0;
   padding: 0;
   overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 ul li > label.pack-checkbox > span:after,
