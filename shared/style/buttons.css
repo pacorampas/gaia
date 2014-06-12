@@ -2,8 +2,6 @@
  * Buttons
  * ---------------------------------- */
 
-.button::-moz-focus-inner,
-[role="button"]::-moz-focus-inner,
 button::-moz-focus-inner {
   border: none;
   outline: none;
@@ -135,7 +133,7 @@ select {
   border-radius: 0;
 }
 
-li button {
+li > button {
   padding: 0;
 }
 
