@@ -1,3 +1,6 @@
+/*
+# Call group info container
+*/
 #call-info-view {
   position: absolute;
   top: 0;
@@ -10,6 +13,39 @@
 #call-info-view p {
   margin: 0;
 }
+
+/*
+## Call group details
+
+```
+<div class="ci__wrapper">
+  <div class="ci__calls-wrapper">
+    <div class="ci__group-info">
+      <p id="call-info-day" class="ci__grow">Yesterday</p>
+      <p id="call-info-direction" class="ci__direction-icon icon-outgoing"></p>
+    </div>
+
+    <div id="call-durations">
+      <div class="call-duration">
+        <p data-date="1410937694213" class="ci__grow js-ci-start-times">9:08 AM</p>
+        <p data-l10n-id="canceled" class="cd__duration">Canceled</p>
+      </div>
+
+      <div class="call-duration">
+        <p data-date="1410937683108" class="ci__grow js-ci-start-times">9:08 AM</p>
+        <p data-l10n-id="canceled" class="cd__duration">Canceled</p>
+      </div>
+
+      <div class="call-duration">
+        <p data-date="1410937660103" class="ci__grow js-ci-start-times">9:07 AM</p>
+        <p data-l10n-id="canceled" class="cd__duration">Canceled</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+```
+*/
 
 .ci__wrapper {
   padding: 1.4rem 1.5rem 0;
